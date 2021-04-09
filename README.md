@@ -2,6 +2,13 @@
 
 Get stock prices in real time using Yahoo Finance and node
 
+- Actual market price
+- Market price change
+- Market price change in percent
+- Pre Market price
+- Pre Market price change
+- Pre Market price change in percent
+
 # Run
     node app/index.js 
     
