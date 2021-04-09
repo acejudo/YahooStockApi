@@ -1,3 +1,5 @@
+[![Build and deploy Node.js app to Azure Web App - yahoostockapi](https://github.com/acejudo/YahooStockApi/actions/workflows/main_yahoostockapi.yml/badge.svg)](https://github.com/acejudo/YahooStockApi/actions/workflows/main_yahoostockapi.yml)
+
 # Yahoo Stock Api
 
 Get stock prices in real time using Yahoo Finance and node
