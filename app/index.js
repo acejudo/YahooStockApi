@@ -20,6 +20,7 @@ app.get('/', async (req, res) => {
       const preMarketChange = await getPreMarketChange(ticker);
       const preMarketChangePercent = await getPreMarketChangePercent(ticker);
       res.json({ 
+        'ticker': ticker ,
         'marketPrice': marketPrice ,
         'marketPriceChange': marketPriceChange ,
         'marketPriceChangePercent' : marketPriceChangePercent, 

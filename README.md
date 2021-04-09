@@ -1,9 +1,47 @@
-Run node app/index.js 
+# Yahoo Stock Api
 
-Create docker image
+Get stock prices in real time using Yahoo Finance and node
+
+# Run
+    node app/index.js 
+    
+# Create docker image
     docker build -t acejudo/yahoo_stock_api .
 
-Docker run
+# Docker run
     docker run -p 8080:8080 -d acejudo/yahoo_stock_api
+# Request
 
-http://localhost:8080/?ticker=AQB
+    http://localhost:8080/?ticker=AQB
+    
+    https://yahoostockapi.azurewebsites.net/?ticker=AQB
+
+# Response
+
+    {
+      "ticker": "MSFT",
+      "marketPrice": {
+        "currency": "USD",
+        "price": 253.25
+      },
+      "marketPriceChange": {
+        "currency": "USD",
+        "price": 3.35
+      },
+      "marketPriceChangePercent": {
+        "currency": "USD",
+        "price": 1.34
+      },
+      "preMarketPrice": {
+        "currency": "USD",
+        "price": 252.82
+      },
+      "preMarketPriceChange": {
+        "currency": "USD",
+        "price": -0.43
+      },
+      "preMarketPriceChangePercent": {
+        "currency": "USD",
+        "price": -0.17
+      }
+    }
